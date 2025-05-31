@@ -1,0 +1,190 @@
+<?php
+// session_start(); // Start the session for login or other features if needed
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Luxury Hotel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.php" class="active">Home</a></li>
+                    <li><a href="rooms.php">Rooms</a></li>
+                    <li><a href="booking.php">Book Now</a></li>
+                    <li><a href="feedback.php">Feedback</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="login.php" class="btn-login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Welcome to Luxury Hotel</h2>
+                <p>Experience luxury and comfort like never before</p>
+                <a href="booking.php" class="btn-primary">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Our Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Free Wi-Fi</h3>
+                    <p>Stay connected with high-speed internet throughout your stay.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-swimming-pool"></i>
+                    <h3>Swimming Pool</h3>
+                    <p>Relax and enjoy our luxurious swimming pool.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Restaurant</h3>
+                    <p>Enjoy delicious meals at our in-house restaurant.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-spa"></i>
+                    <h3>Spa Services</h3>
+                    <p>Pamper yourself with our rejuvenating spa treatments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Preview Section -->
+    <section class="room-preview">
+        <div class="container">
+            <h2 class="section-title">Our Rooms</h2>
+            <div class="room-grid">
+                <div class="room-card">
+                    <img src="images/room1.jpg" alt="Standard Room">
+                    <div class="room-details">
+                        <h3>Standard Room</h3>
+                        <p>Comfortable room with all basic amenities.</p>
+                        <p class="price">$99 / night</p>
+                        <a href="booking.php?room=standard" class="btn-secondary">Book Now</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="images/room2.jpg" alt="Deluxe Room">
+                    <div class="room-details">
+                        <h3>Deluxe Room</h3>
+                        <p>Spacious room with premium amenities.</p>
+                        <p class="price">$149 / night</p>
+                        <a href="booking.php?room=deluxe" class="btn-secondary">Book Now</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="images/room3.jpg" alt="Suite">
+                    <div class="room-details">
+                        <h3>Suite</h3>
+                        <p>Luxurious suite with separate living area.</p>
+                        <p class="price">$249 / night</p>
+                        <a href="booking.php?room=suite" class="btn-secondary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Guests Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"Amazing experience! The staff was very friendly and the rooms were immaculate."</p>
+                    <div class="testimonial-author">
+                        <h4>Ali Sudozai</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The best hotel I've ever stayed in. The amenities are top-notch and the service is exceptional."</p>
+                    <div class="testimonial-author">
+                        <h4>Bilal Ahmad</h4>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Luxury Hotel</h3>
+                    <p>Experience luxury and comfort like never before.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="rooms.php">Rooms</a></li>
+                        <li><a href="booking.php">Book Now</a></li>
+                        <li><a href="feedback.php">Feedback</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Hotel Street, City, Country</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@luxuryhotel.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luxury Hotel. All rights reserved. | Developed by Ehtisham Sajid (44201)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
